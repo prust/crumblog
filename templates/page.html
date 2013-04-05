@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="author" content="{{author}}">
+  <meta name="description" content="{{description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" href="feed.rss" title="{{title}}" type="application/rss+xml">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #eee; margin: 10px; }
+    header, footer { margin-left: 30px }
+    .sidebar-nav { margin: 10px 0 }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1><a href="/">{{title}}</a></h1>
+  <p>{{description}}</p>
+</header>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span9" id="wrapper">{{articles article.html}}</div>
+    <div class="span3">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-header">Tags</li>
+          <li><a href="/tags/Backbone.js/">Backbone.js (2)</a></li>
+          <li><a href="/tags/Javascript/">Javascript (6)</a></li>
+          <li><a href="/tags/jQuery/">jQuery (1)</a></li>
+          <li><a href="/tags/node/">node (1)</a></li>
+          <li><a href="/tags/npm/">npm (1)</a></li>
+          <li><a href="/tags/readability/">readability (1)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2013 {{author}}</footer>
+
+{{disqus.html}}
+</body>
+</html>

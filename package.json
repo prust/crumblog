@@ -1,0 +1,28 @@
+{
+  "name": "crumblog",
+  "version": "0.1.0",
+  "author": "Peter Rust <peter@peterandjessica.com>",
+  "description": "the simplest possible static markdown blog",
+  "main": "crumblog.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prust/crumblog.git"
+  },
+  "keywords": [
+    "blog",
+    "simple",
+    "markdown",
+    "static"
+  ],
+  "dependencies": {
+    "rss": "0.0.x",
+    "glob": "3.1.x",
+    "async": "0.2.x",
+    "underscore": "1.4.x",
+    "marked": "0.2.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}

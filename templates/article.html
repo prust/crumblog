@@ -1,0 +1,14 @@
+<style>
+article { background-color: white; padding: 10px; margin: 10px; border: 1px solid #ddd; }
+article header { margin-left: 0 }
+article h1 { font-size: 2em }
+article time { font-style: italic }
+</style>
+
+<article class="post">
+  <header>
+    <time datetime="{{date}}">{{pretty_date}}</time>
+    <h1 class="title"><a href="{{url}}">{{title}}</a></h1>
+  </header>
+  <div class="entry">{{description}}</div>
+</article>
