@@ -1,5 +1,7 @@
 # Crumblog
 
+[crumblog logo](logo.png)
+
 Extremely simple static markdown blog generator, operates based on a folder full of markdown files, using the filename, file properties and markdown metadata).
 
 [Bread][0] designed by an unknown designer from [The Noun Project][1]
