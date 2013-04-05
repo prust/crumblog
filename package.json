@@ -2,7 +2,7 @@
   "name": "crumblog",
   "version": "0.1.0",
   "author": "Peter Rust <peter@peterandjessica.com>",
-  "description": "the simplest possible static markdown blog",
+  "description": "Extremely simple static markdown blog generator",
   "main": "crumblog.js",
   "repository": {
     "type": "git",
