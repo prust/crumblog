@@ -1,6 +1,6 @@
 # Crumblog
 
-[crumblog logo](logo.png)
+![crumblog logo](logo.png)
 
 Extremely simple static markdown blog generator, operates based on a folder full of markdown files, using the filename, file properties and markdown metadata).
 
