@@ -19,7 +19,7 @@
     "glob": "3.1.x",
     "async": "0.2.x",
     "underscore": "1.4.x",
-    "marked": "0.2.x"
+    "marked": "0.3.12"
   },
   "license": "MIT",
   "engines": {
