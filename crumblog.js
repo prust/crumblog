@@ -2,7 +2,6 @@ var glob = require('glob'),
     async = require('async'),
     _ = require('underscore'),
     fs = require('fs'),
-    rss = require('rss'),
     marked = require('marked'),
     join = require('path').join;
 
@@ -13,7 +12,6 @@ var config = {
   'author': 'Peter Rust',
   'disqus_shortname': 'smallandsharp'
 };
-config.feed_url = config.site_url + '/feed.rss';
 
 loadTemplates('article.html', {'root': 'templates'}, function(err, templates) {
   var gt = GlassTemplates(templates);
@@ -29,14 +27,9 @@ loadTemplates('article.html', {'root': 'templates'}, function(err, templates) {
       entries = _.sortBy(entries, 'date');
       entries.reverse();
       
-      var feed = new rss(config);
-      entries.forEach(function(entry) { feed.item(entry); })
-      fs.writeFile(join('site', 'feed.rss'), feed.xml(true), function(err) {
-        if (err) throw new Error('Error writing feed.rss: ' + (err.message || err));
-        fs.writeFile(join('site', 'index.html'), gt.template(_.extend({'articles': entries}, config)), function(err) {
-          if (err) throw new Error('Error writing index.html: ' + (err.message || err));
-          console.log('Success! Static blog site generated.');
-        });
+      fs.writeFile(join('site', 'index.html'), gt.template(_.extend({'articles': entries}, config)), function(err) {
+        if (err) throw new Error('Error writing index.html: ' + (err.message || err));
+        console.log('Success! Static blog site generated.');
       });
     });
   });

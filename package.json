@@ -15,7 +15,6 @@
     "static"
   ],
   "dependencies": {
-    "rss": "0.0.x",
     "glob": "3.1.x",
     "async": "0.2.x",
     "underscore": "1.4.x",
